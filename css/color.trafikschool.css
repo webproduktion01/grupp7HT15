@@ -1,0 +1,51 @@
+body{
+    background-color:#FFFFFF;
+}
+
+main{
+    background-color:#EEEEEE;
+    
+}
+header{
+   background-color:#EEEDDD;
+}
+navigation{
+    background-color:#EEEAAA;
+}
+contact{
+   background-color:#CCCCCC;
+}
+#content{
+    background-color:#000000;
+    
+}
+footer{
+    background-color:#B6EEFF;
+}
+#firstSection{
+    background-color:#BBBBBB;
+    margin:1em;
+}
+#mainPos{
+    background-color:#00000F;
+}
+
+#teacherContainer{
+    background-color:#AAA999;
+    
+}
+#vehicleContainer{
+    background-color:#AAA888;
+    
+}
+.teacher{
+    background-color:#555555;
+}
+.vehicle{
+    background-color:#444444;
+}
+
+
+
+
+

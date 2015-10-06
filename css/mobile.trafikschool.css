@@ -1,101 +1,257 @@
-body{
-    margin:0 5% 0 5%;
-    background-color:#FFFFFF;
+body {
+    margin: 0 5% 0 5%;
+    background-color: #FFFFFF;
 }
 
-main,header,navigation,footer,#content,#mainPos,#teacherContainer,#vehicleContainer{
-    min-width:100%;
-    width:100%;
-    max-width:100%;
+main,
+header,
+navigation,
+footer,
+#content,
+#mainPos,
+#teacherContainer,
+#vehicleContainer {
+    min-width: 100%;
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    float: left;
+}
+
+main {
+    background-color: #EEEEEE;
+    width: 75em;
+    overflow-y:scroll;
+}
+
+header {
+    max-height: 20%;
+    min-height: 20%;
+    height: 20%;
+    background-color: #EEEDDD;
+}
+
+navigation {
+    max-height: 10%;
+    height: 10%;
+    min-height: 10%;
+    background-color: black;
+}
+
+contact {
+    max-height: 15%;
+    height: 15%;
+    min-height: 15%;
+    background-color: #CCCCCC;
+}
+
+#content {
+    background-color: #000000;
+}
+
+footer {
+    max-height: 10%;
+    height: 10%;
+    min-height: 10%;
+    max-width: 100%;
+    width: 100%;
+    min-width: 100%;
+    background-color: #CCCBBB;
+}
+
+#firstSection {
+    background-color: #BBBBBB;
+    margin: 1em;
+}
+
+#mainPos {
+    background-color: #00000F;
+}
+
+#teacherContainer,
+#vehicleContainer {
+    max-height: 50%;
+    height: 50%;
+    min-height: 50%;
+    clear: left;
+}
+
+#teacherContainer {
+    background-color: #AAA999;
+    margin: 0.125em 0 0.125em 0;
+}
+
+#vehicleContainer {
+    background-color: #AAA888;
+    margin: 0.125em 0 0.125em 0;
+}
+
+.teacher {
+    background-color: #555555;
+}
+
+.vehicle {
+    background-color: #444444;
+}
+
+.teacher,
+.vehicle {
+    float: left;
+    margin: 0.5em;
+    max-width: 25%;
+    width: 25%;
+    min-width: 25%;
+}
+
+
+/* Layout meny */
+
+navigation {
+    text-align: center;
+    margin: auto;
+}
+
+navigation section {
+}
+
+navigation section h4 {
+    font-size: 1.17em;
+    margin: 0 1em;
+    font-weight: bold;
+    
+}
+/* below is the apparent solution...*/
+navigation section h4:hover{
+    color:orange;
+}
+
+navigation section div {
+    display:none;
+    -webkit-transition: opacity .5s ease-out;
+    -o-transition: opacity .5s ease-out;
+    -moz-transition: opacity .5s ease-out;
+    -ms-transition: opacity .5s ease-out;
+    transition: opacity .5s ease-out;
+    position: absolute;
+    opacity:0;
+    left: -20000px;
+}
+
+navigation div div {
+    margin: 0 0.5em;
+    list-style: none;
     display:block;
-    float:left;
-;
 }
-main{
-    background-color:#EEEEEE;
-    width:75em;
+
+navigation div div a {
+    color: black;
 }
-header{
-    max-height:20%;   
-    min-height:20%;
-    height:20%;
-    background-color:#EEEDDD;
+
+navigation div div a:link,
+navigation div div a:visited {
+    text-decoration:none;
 }
-navigation{
-    max-height:10%;
-    height:10%;
-    min-height:10%;
-    background-color:#EEEAAA;
+
+navigation section:hover > div,
+navigation section:hover > div div{
+    display:block;
+    opacity: 1;
+    height: auto;
+    left: 0;
+    position: relative;
+    clear: both;
+    z-index: 1000;
 }
-contact{
-    max-height:15%;
-    height:15%;
-    min-height:15%;
-    background-color:#CCCCCC;
+
+
+navigation div div a:hover {
+    background-color:navy;
 }
-#content{
-    background-color:#000000;
-    
-}
-footer{
-    max-height:10%;
-    height:10%;
-    min-height:10%;
-    max-width:100%;
+
+#logo {
     width:100%;
-    min-width:100%;
-    background-color:#CCCBBB;
-}
-#firstSection{
-    background-color:#BBBBBB;
-    margin:1em;
-}
-#mainPos{
-    background-color:#00000F;
-}
-#teacherContainer,#vehicleContainer{
-    max-height:50%;
-    height:50%;
-    min-height:50%;
-    clear:left;
-}
-#teacherContainer{
-    background-color:#AAA999;
-    margin:0.125em 0 0.125em 0;
-}
-#vehicleContainer{
-    background-color:#AAA888;
-    margin:0.125em 0 0.125em 0;
-}
-.teacher{
-    background-color:#555555;
-}
-.vehicle{
-    background-color:#444444;
-}
-.teacher,.vehicle{
-    float:left;
-    margin:0.5em;
-    max-width:25%;
-    width:25%;
-    min-width:25%;
 }
 
-footer adress, h6, p{
-    font-size:1em;
-    font-style:italic;
-    margin:0.3em;
+#starticon{
+    background-image:url(pics/sprites.png);
+    background-repeat:no-repeat;
+    background-position: -6px -305px;
 }
 
-footer adress, h6{
-    font-weight:bold;
+#scheduleicon {
+    background-image:url(pics/sprites.png);
+    background-repeat:no-repeat;
+    background-position: -5px -405px;
 }
 
-footer adress, p {
-    font-weight:normal;
+#presentationicon{
+    background-image:url(pics/sprites.png);
+    background-repeat:no-repeat;
+    background-position: -4px -703px;
+    
+    
+}
+
+#coursesicon {
+    background-image:url(pics/sprites.png);
+    background-repeat:no-repeat;
+    background-position: -5px -504px;
+    
+}
+
+#contacticon {
+    background-image:url(pics/sprites.png);
+    background-repeat:no-repeat;
+    background-position: -5px -605px;
+    
+}
+
+.activeicon {
+    background-image:url(pics/sprites.png);
+    background-repeat:no-repeat;
+    background-position:-5px -6px;
+}
+
+
+
+.menudiv {
+    padding:1em;
     
 }
 
 
 
+/* Copy-paste'd tutorial settings*/
+/*
+nav select {
+    display: none;
+}
 
+@media (max-width: 960px) {
+    nav ul {
+        display: none;
+    }
+    nav select {
+        display: inline-block;
+    }
+    nav select option {
+        text-align: center;
+        color: yellow;
+    }
+}
+
+footer adress h6,
+footer adress p {
+    font-size: 1em;
+    font-style: italic;
+    margin: 0.3em;
+}
+
+footer adress h6 {
+    font-weight: bold;
+}
+
+footer adress p {
+    font-weight: normal;
+}
+*/
