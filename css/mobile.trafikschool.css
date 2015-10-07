@@ -206,9 +206,11 @@ textarea{
 	vertical-align: top;
 	height: 5em;
 }
-
+form span{
+    display:block;
+}
 .error{
-	display: none;
+    display:block;
 	margin-left: 10px;
 }		
 
