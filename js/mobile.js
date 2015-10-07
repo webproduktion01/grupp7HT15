@@ -1,3 +1,5 @@
 $(document).ready(function() {
-    $("#calendar").weekCalendar();
+    $("#calendar").weekCalendar(function(){
+        $(this).setDaysToShow(2);
+    });
 });

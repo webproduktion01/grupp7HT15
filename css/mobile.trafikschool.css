@@ -269,3 +269,9 @@ textarea{
     padding:1em;
     
 }
+/*experimental sizing of calendar*/
+#calendar{
+    height:auto;
+    width:auto;
+    overflow:visible;
+}
