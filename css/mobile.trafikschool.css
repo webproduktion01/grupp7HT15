@@ -19,7 +19,6 @@ footer,
 }
 
 main {
-    background-color: #EEEEEE;
     width: 75em;
     overflow-y:scroll;
 }
@@ -28,25 +27,18 @@ header {
     max-height: 20%;
     min-height: 20%;
     height: 20%;
-    background-color: #EEEDDD;
 }
 
 navigation {
     max-height: 10%;
     height: 10%;
     min-height: 10%;
-    background-color: black;
 }
 
 contact {
     max-height: 15%;
     height: 15%;
     min-height: 15%;
-    background-color: #CCCCCC;
-}
-
-#content {
-    background-color: #000000;
 }
 
 footer {
@@ -56,17 +48,12 @@ footer {
     max-width: 100%;
     width: 100%;
     min-width: 100%;
-    background-color: #CCCBBB;
 }
 
 #firstSection {
-    background-color: #BBBBBB;
     margin: 1em;
 }
 
-#mainPos {
-    background-color: #00000F;
-}
 
 #teacherContainer,
 #vehicleContainer {
@@ -77,21 +64,19 @@ footer {
 }
 
 #teacherContainer {
-    background-color: #AAA999;
     margin: 0.125em 0 0.125em 0;
 }
 
 #vehicleContainer {
-    background-color: #AAA888;
     margin: 0.125em 0 0.125em 0;
 }
 
 .teacher {
-    background-color: #555555;
+    
 }
 
 .vehicle {
-    background-color: #444444;
+    
 }
 
 .teacher,
@@ -120,21 +105,10 @@ navigation section h4 {
     font-weight: bold;
     
 }
-/* below is the apparent solution...*/
-navigation section h4:hover{
-    color:orange;
-}
+
 
 navigation section div {
     display:none;
-    -webkit-transition: opacity .5s ease-out;
-    -o-transition: opacity .5s ease-out;
-    -moz-transition: opacity .5s ease-out;
-    -ms-transition: opacity .5s ease-out;
-    transition: opacity .5s ease-out;
-    position: absolute;
-    opacity:0;
-    left: -20000px;
 }
 
 navigation div div {
@@ -155,19 +129,13 @@ navigation div div a:visited {
 navigation section:hover > div,
 navigation section:hover > div div{
     display:block;
-    opacity: 1;
-    height: auto;
-    left: 0;
-    position: relative;
-    clear: both;
-    z-index: 1000;
 }
 
 
 navigation div div a:hover {
     background-color:navy;
 }
-
+/* Sprite icon settings */
 #logo {
     width:100%;
 }
@@ -218,40 +186,3 @@ navigation div div a:hover {
     padding:1em;
     
 }
-
-
-
-/* Copy-paste'd tutorial settings*/
-/*
-nav select {
-    display: none;
-}
-
-@media (max-width: 960px) {
-    nav ul {
-        display: none;
-    }
-    nav select {
-        display: inline-block;
-    }
-    nav select option {
-        text-align: center;
-        color: yellow;
-    }
-}
-
-footer adress h6,
-footer adress p {
-    font-size: 1em;
-    font-style: italic;
-    margin: 0.3em;
-}
-
-footer adress h6 {
-    font-weight: bold;
-}
-
-footer adress p {
-    font-weight: normal;
-}
-*/

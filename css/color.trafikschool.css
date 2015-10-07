@@ -44,6 +44,10 @@ footer{
 .vehicle{
     background-color:#444444;
 }
+/* below is the apparent solution...*/
+navigation section h4:hover{
+    color:orange;
+}
 
 
 
