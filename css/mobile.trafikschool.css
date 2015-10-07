@@ -35,10 +35,26 @@ nav {
     min-height: 10%;
 }
 
+/* contact block layout */
+
 #contact {
     max-height: 15%;
     height: 15%;
     min-height: 15%;
+}
+
+.contact-email {
+    margin:0.5em;
+    font-size:1.1em;
+    font-style:italic;
+    float:left;
+}
+
+.contact-tel {
+    margin:0.5em;
+    font-size:1.1em;
+    font-style:italic;
+    float:left;
 }
 
 /* Footer layout*/
