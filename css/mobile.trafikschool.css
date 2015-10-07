@@ -5,7 +5,7 @@ body {
 
 main,
 header,
-navigation,
+nav,
 footer,
 #content,
 #mainPos,
@@ -29,17 +29,19 @@ header {
     height: 20%;
 }
 
-navigation {
+nav {
     max-height: 10%;
     height: 10%;
     min-height: 10%;
 }
 
-contact {
+#contact {
     max-height: 15%;
     height: 15%;
     min-height: 15%;
 }
+
+/* Footer layout*/
 
 footer {
     max-height: 10%;
@@ -49,6 +51,41 @@ footer {
     width: 100%;
     min-width: 100%;
 }
+
+#contact-details{
+    max-height: 15%;
+    height: 15%;
+    min-height: 15%;
+}
+
+.adress-details {
+    float:left;
+    margin:0.5em;
+}
+
+.email-details {
+    float:left;
+    margin:0.5em;
+}
+
+.tel-details {
+    float:left;
+    margin:0.5em;
+}
+
+h6 {
+    font-size:1em;
+    font-weight:bold;
+    font-style:italic;
+}
+
+.adress-details p, email-details p, tel-details p {
+    font-size:1em;
+    font-style:italic;
+}
+
+
+/* Section 1 layout */
 
 #firstSection {
     margin: 1em;
@@ -91,15 +128,15 @@ footer {
 
 /* Layout meny */
 
-navigation {
+nav {
     text-align: center;
     margin: auto;
 }
 
-navigation section {
+nav section {
 }
 
-navigation section h4 {
+nav section h4 {
     font-size: 1.17em;
     margin: 0 1em;
     font-weight: bold;
@@ -107,32 +144,32 @@ navigation section h4 {
 }
 
 
-navigation section div {
+nav section div {
     display:none;
 }
 
-navigation div div {
+nav div div {
     margin: 0 0.5em;
     list-style: none;
     display:block;
 }
 
-navigation div div a {
+nav div div a {
     color: black;
 }
 
-navigation div div a:link,
-navigation div div a:visited {
+nav div div a:link,
+nav div div a:visited {
     text-decoration:none;
 }
 
-navigation section:hover > div,
-navigation section:hover > div div{
+nav section:hover > div,
+nav section:hover > div div{
     display:block;
 }
 
 
-navigation div div a:hover {
+nav div div a:hover {
     background-color:navy;
 }
 /* Sprite icon settings */

@@ -9,10 +9,10 @@ main{
 header{
    background-color:#EEEDDD;
 }
-navigation{
+nav{
     background-color:#EEEAAA;
 }
-contact{
+#contact{
    background-color:#CCCCCC;
 }
 #content{
@@ -21,6 +21,11 @@ contact{
 }
 footer{
     background-color:#B6EEFF;
+}
+
+#adress {
+    background-color:#CCCCCC;
+    
 }
 #firstSection{
     background-color:#BBBBBB;
@@ -45,7 +50,7 @@ footer{
     background-color:#444444;
 }
 /* below is the apparent solution...*/
-navigation section h4:hover{
+nav section h4:hover{
     color:orange;
 }
 

@@ -1,5 +1,5 @@
 /* Code from https://css-tricks.com/convert-menu-to-dropdown/ */
-
+/*
 // Create the dropdown base
 $("<select />").appendTo("nav");
 
@@ -27,3 +27,4 @@ $("nav select").click(function() {
   window.location = $(this).find("option:selected").val();  
 });
 console.log("Test");
+*/
