@@ -29,10 +29,10 @@ footer{
 }
 #firstSection{
     background-color:#BBBBBB;
-    margin:1em;
+    
 }
 #mainPos{
-    background-color:#00000F;
+    background-color:#E4CFE8;
 }
 
 #teacherContainer{
@@ -53,6 +53,8 @@ footer{
 nav section h4:hover{
     color:orange;
 }
+
+/* */
 
 
 
