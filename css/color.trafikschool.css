@@ -54,7 +54,17 @@ nav section h4:hover{
     color:orange;
 }
 
-/* */
+/* Form input coloring */
+.error_show{
+	color: red;
+}
+input.invalid, textarea.invalid{
+	border: 2px solid red;
+}
+
+input.valid, textarea.valid{
+	border: 2px solid green;
+}
 
 
 

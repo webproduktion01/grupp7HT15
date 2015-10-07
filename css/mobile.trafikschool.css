@@ -188,7 +188,37 @@ nav section:hover > div div{
 nav div div a:hover {
     background-color:navy;
 }
+
+/* Contact form layout/behaviour */
+
+#contact label{
+	display: inline-block;
+	width: 100px;
+	text-align: right;
+}
+#contact_submit{
+	padding-left: 100px;
+}
+#contact div{
+	margin-top: 1em;
+}
+textarea{
+	vertical-align: top;
+	height: 5em;
+}
+
+.error{
+	display: none;
+	margin-left: 10px;
+}		
+
+.error_show{
+	margin-left: 10px;
+}
+
+
 /* Sprite icon settings */
+
 #logo {
     width:100%;
 }
