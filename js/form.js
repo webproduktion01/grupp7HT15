@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $("#contact_name").blur('input', function() {
+    $("#contact_form").focusout(function() {
         $(this).addClass("invalid");
     });
     
@@ -8,13 +8,12 @@ $(document).ready(function() {
         var is_name = input.val();
         if (is_name) {
             input.removeClass("invalid").addClass("valid");
-            $("#nameDetails").text("");
-            
+            input.next().text("");
+
         }
         else {
             input.removeClass("valid").addClass("invalid");
-            $("#nameDetails").text("This field is required");
-          
+            input.next().text("This field is required");
         }
     });
 
@@ -25,13 +24,13 @@ $(document).ready(function() {
         var is_email = re.test(input.val());
         if (is_email) {
             input.removeClass("invalid").addClass("valid");
-             $("#emailDetails").text("");
-            
-            
+            input.next().text("");
+
+
         }
         else {
             input.removeClass("valid").addClass("invalid");
-            $("#emailDetails").text("A valid email address is required");
+            input.next().text("A valid email address is required");
         }
     });
 
@@ -42,26 +41,25 @@ $(document).ready(function() {
         var is_tel = re.test(input.val());
         if (is_tel) {
             input.removeClass("invalid").addClass("valid");
-             $("#telDetails").text("");
+            input.next().text("");
         }
         else {
             input.removeClass("valid").addClass("invalid");
-            $("#telDetails").text("A valid number is required");
+            input.next().text("A valid number is required");
         }
     });
 
     // Message can't be blank
-    $('#contact_message').keyup(function(event) {
+    $('#contact_message').keyup(function() {
         var input = $(this);
         var message = $(this).val();
-        console.log(message);
         if (message) {
             input.removeClass("invalid").addClass("valid");
-            $("#messageDetails").text("");
+            input.next().text("");
         }
         else {
             input.removeClass("valid").addClass("invalid");
-            $("#messageDetails").text("This field is required");
+            input.next('SPAN').text("This field is required");
         }
     });
 
