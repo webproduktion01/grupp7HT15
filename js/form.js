@@ -1,4 +1,8 @@
 $(document).ready(function() {
+    $("#contact_name").blur('input', function() {
+        $(this).addClass("invalid");
+    });
+    
     $('#contact_name').on('input', function() {
         var input = $(this);
         var is_name = input.val();
@@ -10,6 +14,7 @@ $(document).ready(function() {
         else {
             input.removeClass("valid").addClass("invalid");
             $("#nameDetails").text("This field is required");
+          
         }
     });
 

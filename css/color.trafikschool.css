@@ -66,6 +66,10 @@ input.valid, textarea.valid{
 	border: 2px solid green;
 }
 
+blurcolor {
+    border:2px solid red; /*#ef3b3b;*/
+}
+
 
 
 

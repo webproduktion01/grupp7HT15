@@ -191,10 +191,15 @@ nav div div a:hover {
 
 /* Contact form layout/behaviour */
 
+#contact_form {
+    width:60%;
+}
+
 #contact label{
 	display: inline-block;
-	width: 100px;
+	width: 100px; 
 	text-align: right;
+	float:left;
 }
 #contact_submit{
 	padding-left: 100px;
@@ -216,6 +221,11 @@ form span{
 
 .error_show{
 	margin-left: 10px;
+}
+
+form div {
+    font-size:1.1em;
+    margin:1em;
 }
 
 
