@@ -59,7 +59,7 @@ nav section h4:hover{
 	color: red;
 }
 input.invalid, textarea.invalid{
-	border: 2px solid #ed491c;
+	border: 1px solid #ed491c;
 }
 
 input.valid, textarea.valid{
