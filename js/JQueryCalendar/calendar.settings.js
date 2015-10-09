@@ -33,10 +33,16 @@ var eventData = {
 
 $(document).ready(function() {
     $('#calendar').weekCalendar({
-        timeslotsPerHour: 2,
+        //Mobile version should view only 3 days
+        daysToShow:3,
+        timeslotsPerHour: 4,
         timeslotHeigh: 30,
         hourLine: true,
         data: eventData,
+        //remove title
+        title:'Calendar',
+        textSize:13,
+        allowEventDelete:true,
         height: function($calendar) {
             return $(window).height() - $('h1').outerHeight(true);
         },
