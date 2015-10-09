@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $("#contact_form").focusout(function() {
+    $("#contact_name").blur('input', function() {
         $(this).addClass("invalid");
     });
     
@@ -18,6 +18,10 @@ $(document).ready(function() {
     });
 
     // Email must be an email
+    $("#contact_email").blur('input', function() {
+        $(this).addClass("invalid");
+    });
+    
     $('#contact_email').on('input', function() {
         var input = $(this);
         var re = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
@@ -32,6 +36,11 @@ $(document).ready(function() {
             input.removeClass("valid").addClass("invalid");
             input.next().text("A valid email address is required");
         }
+    });
+    
+    // Must be a valid telephone number
+    $("#contact_tel").blur('input', function() {
+        $(this).addClass("invalid");
     });
 
 
@@ -50,6 +59,10 @@ $(document).ready(function() {
     });
 
     // Message can't be blank
+    $("#contact_message").blur('input', function() {
+        $(this).addClass("invalid");
+    });
+    
     $('#contact_message').keyup(function() {
         var input = $(this);
         var message = $(this).val();
