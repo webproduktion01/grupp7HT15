@@ -35,27 +35,7 @@ nav {
     min-height: 10%;
 }
 
-/* contact block layout */
 
-#contact {
-    max-height: 15%;
-    height: 15%;
-    min-height: 15%;
-}
-
-.contact-email {
-    margin:0.5em;
-    font-size:1.1em;
-    font-style:italic;
-    float:left;
-}
-
-.contact-tel {
-    margin:0.5em;
-    font-size:1.1em;
-    font-style:italic;
-    float:left;
-}
 
 /* Footer layout*/
 
@@ -187,17 +167,17 @@ nav div div a:hover {
 /* Contact form layout/behaviour */
 
 #contact_form {
-    width:60%;
+    width:100%;
 }
 
 #contact label{
 	display: inline-block;
 	width: 100px; 
 	text-align: right;
-	float:left;
+	
 }
 #contact_submit{
-	padding-left: 100px;
+	padding-left: 10px;
 }
 #contact div{
 	margin-top: 1em;
@@ -207,7 +187,9 @@ textarea{
 	height: 5em;
 }
 form span{
-    display:block;
+    
+    float:left;
+    
 }
 .error{
     display:block;
@@ -219,8 +201,35 @@ form span{
 }
 
 form div {
+    display:block;
     font-size:1.1em;
     margin:1em;
+}
+
+form p {
+    font-size:0.8em;
+    font-style:italic;
+    
+}
+
+#contact {
+    max-height: 15%;
+    height: 15%;
+    min-height: 15%;
+}
+
+.contact-email {
+    margin:0.5em;
+    font-size:1.1em;
+    font-style:italic;
+    float:left;
+}
+
+.contact-tel {
+    margin:0.5em;
+    font-size:1.1em;
+    font-style:italic;
+    float:left;
 }
 
 
@@ -231,49 +240,49 @@ form div {
 }
 
 #starticon{
-    background-image:url(pics/sprites.png);
+    background-image:url(pics/spritesTS3.svg);
     background-repeat:no-repeat;
-    background-position: -6px -305px;
+    background-position: -4px -190px;
 }
 
 #scheduleicon {
-    background-image:url(pics/sprites.png);
+    background-image:url(pics/spritesTS3.svg);
     background-repeat:no-repeat;
-    background-position: -5px -405px;
+    background-position: -4px -259px;
 }
 
 #presentationicon{
-    background-image:url(pics/sprites.png);
+    background-image:url(pics/spritesTS3.svg);
     background-repeat:no-repeat;
-    background-position: -4px -703px;
+    background-position: -4px -59px;
     
     
 }
 
 #coursesicon {
-    background-image:url(pics/sprites.png);
+    background-image:url(pics/spritesTS3.svg);
     background-repeat:no-repeat;
-    background-position: -5px -504px;
+    background-position: -4px -125px;
     
 }
 
 #contacticon {
-    background-image:url(pics/sprites.png);
+    background-image:url(pics/spritesTS3.svg);
     background-repeat:no-repeat;
-    background-position: -5px -605px;
+    background-position: -4px -330px;
     
 }
 
 .activeicon {
-    background-image:url(pics/sprites.png);
+    background-image:url(pics/spritesTS3.svg);
     background-repeat:no-repeat;
-    background-position:-5px -6px;
+    background-position:-4px -1px;
 }
 
 
 
 .menudiv {
-    padding:1em;
+    padding:1.3em;
     
 }
 /*experimental sizing of calendar*/

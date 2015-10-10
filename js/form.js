@@ -63,6 +63,7 @@ $(document).ready(function() {
     // Must be a valid telephone number
     $("#contact_tel").blur('input', function() {
         var input = $(this);
+        //
         var re = /^\d{3,14}$/; // regex for telephone number that are 3 to 14 digits long
         var is_tel = re.test(input.val());
         if (is_tel) {
@@ -74,7 +75,10 @@ $(document).ready(function() {
             input.next().text("A valid number is required");
         }
     });
+    
+    // /^(\d{3,14}|\s{0,4})$/
 
+// ^(\(?\d{3}\)?\-?\d{3}\-?\d{4})$
 
     $('#contact_tel').on('input', function() {
         var input = $(this);

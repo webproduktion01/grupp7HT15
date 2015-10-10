@@ -32,7 +32,7 @@ footer{
     
 }
 #mainPos{
-    background-color:#E4CFE8;
+    background-color: white;
 }
 
 #teacherContainer{
@@ -58,13 +58,19 @@ nav section h4:hover{
 .error_show{
 	color: red;
 }
-input.invalid, textarea.invalid{
-	border: 1px solid #ed491c;
+.invalid{
+	outline-color:red;
+	border:1px solid red;
+	
 }
 
-input.valid, textarea.valid{
-	border: 2px solid green;
+.valid{
+	outline-color: #00ff00;
+	border:1px solid #00ff00;
 }
+
+
+
 
 
 
