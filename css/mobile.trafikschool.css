@@ -168,16 +168,17 @@ nav div div a:hover {
 
 #contact_form {
     width:100%;
+    
 }
 
-#contact label{
+#contact_form label{
 	display: inline-block;
 	width: 100px; 
-	text-align: right;
+	text-align: left;
 	
 }
 #contact_submit{
-	padding-left: 10px;
+	padding-left: 100px;
 }
 #contact div{
 	margin-top: 1em;
@@ -201,7 +202,7 @@ form span{
 }
 
 form div {
-    display:block;
+    
     font-size:1.1em;
     margin:1em;
 }
@@ -238,52 +239,36 @@ form p {
 #logo {
     width:100%;
 }
-
-#starticon{
+#starticon,#scheduleicon,#presentationicon,#coursesicon,#contacticon,.activeicon{
     background-image:url(pics/spritesTS3.svg);
     background-repeat:no-repeat;
+}
+#starticon{
     background-position: -4px -190px;
 }
 
 #scheduleicon {
-    background-image:url(pics/spritesTS3.svg);
-    background-repeat:no-repeat;
     background-position: -4px -259px;
 }
 
 #presentationicon{
-    background-image:url(pics/spritesTS3.svg);
-    background-repeat:no-repeat;
     background-position: -4px -59px;
-    
-    
 }
 
 #coursesicon {
-    background-image:url(pics/spritesTS3.svg);
-    background-repeat:no-repeat;
     background-position: -4px -125px;
-    
 }
 
 #contacticon {
-    background-image:url(pics/spritesTS3.svg);
-    background-repeat:no-repeat;
     background-position: -4px -330px;
-    
 }
 
 .activeicon {
-    background-image:url(pics/spritesTS3.svg);
-    background-repeat:no-repeat;
     background-position:-4px -1px;
 }
 
-
-
 .menudiv {
     padding:1.3em;
-    
 }
 /*experimental sizing of calendar*/
 #calendar{
