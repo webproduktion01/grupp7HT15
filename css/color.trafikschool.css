@@ -10,13 +10,24 @@ header{
    background-color:#EEEDDD;
 }
 nav{
-    background-color:#96B0FF;
+    background-color:#90d6f7;          /* rgba(0, 52, 113, 0.8); #10a5ed */
 }
+
+nav section h4 {
+    color:#f26522;    
+}
+
+nav div div a {
+    color:#f26522;
+    
+}
+
+
 #contact{
-   background-color:#FFE5E3;
+   background-color: #B6EEFF;
 }
 #content{
-    background-color:#000000;
+    background-color: white;
     
 }
 footer{
@@ -24,11 +35,11 @@ footer{
 }
 
 #adress {
-    background-color:#CCCCCC;
+    background-color:#10a5ed;
     
 }
 #firstSection{
-    background-color:#BBBBBB;
+    background-color: white;
     
 }
 #mainPos{
@@ -51,7 +62,7 @@ footer{
 }
 /* below is the apparent solution...*/
 nav section h4:hover{
-    color:orange;
+    color:#26522;
 }
 
 /* Form input coloring */
@@ -69,6 +80,9 @@ nav section h4:hover{
 	border:1px solid #00ff00;
 }
 
+#submit_button {
+    background-color:#10a5ed;
+}
 
 
 
