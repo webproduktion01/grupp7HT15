@@ -40,7 +40,7 @@ $(document).ready(function() {
         hourLine: true,
         data: eventData,
         //remove title
-        title:'Calendar',
+        title:'Kalender',
         textSize:13,
         allowEventDelete:true,
         height: function($calendar) {

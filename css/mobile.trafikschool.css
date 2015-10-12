@@ -86,34 +86,53 @@ h6 {
 #firstSection {
     
 }
+/*
+    Viewing window for items in slidshow
+*/
+#mainPos{
+    max-width:100%;
+    min-width:100%;
+    width:100%;
+    overflow:hidden;
+}
 
-
+/*
+    Width is how many items can fit in the slideshow.
+    Negative margin is how many is visible(in this moment 2(100% = 2 * 50%)
+    Depending on parent view container
+*/
 #teacherContainer,
 #vehicleContainer {
     clear: left;
+    margin-left:-50%;        
+    max-width:200%;
+    width:200%;
+    min-width:200%;
 }
 
-#teacherContainer {
-    margin: 0.125em 0 0.125em 0;
-}
 
-#vehicleContainer {
-    margin: 0.125em 0 0.125em 0;
+#vehicleContainer .vehicle:nth-child(3),#vehicleContainer .vehicle:nth-child(4){
+    display:block;
+    float:left;
 }
+#vehicleContainer .vehicle:nth-child(1n+4){
 
-.teacher {
-    
 }
-
-.vehicle {
-    
-}
-
+/*
+    width setting for 4 items in container with 2 visible;
+*/
 .teacher,
 .vehicle {
     float: left;
-    margin: 1%;
-    max-width: 48%;
+    min-width:25%;
+    width:25%;
+    max-width: 25%;
+    overflow:hidden;
+}
+
+.teacher img,
+.vehicle img{
+    max-width:100%;
 }
 
 
