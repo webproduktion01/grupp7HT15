@@ -14,11 +14,11 @@ nav{
 }
 
 nav section h4 {
-    color:#f26522;    
+    color:black;    
 }
 
 nav div div a {
-    color:#f26522;
+    color:black;
     
 }
 
@@ -38,6 +38,9 @@ footer{
     background-color:#10a5ed;
     
 }
+
+/* First section*/
+
 #firstSection{
     background-color: white;
     
@@ -46,20 +49,46 @@ footer{
     background-color: white;
 }
 
+/* Presentation site */
+
 #teacherContainer{
-    background-color:#AAA999;
+    background-color:white;
     
 }
 #vehicleContainer{
-    background-color:#AAA888;
+    background-color:white;
     
 }
 .teacher{
-    background-color:#555555;
+    background-color:#b8e7ea;
 }
 .vehicle{
-    background-color:#444444;
+    background-color:#b8e7ea;
 }
+
+/* Courses site */
+
+#carContainer {
+    background-color:white;
+}
+
+#mcContainer {
+   background-color:white;
+}
+
+#mcContainer h3, #carContainer h3 {
+    background-color:#90d6f7;
+}
+
+.course {
+    background-color:white;
+}
+
+#price {
+    background-color:#b8e7ea;
+}
+
+
 /* below is the apparent solution...*/
 nav section h4:hover{
     color:#26522;
