@@ -40,7 +40,7 @@ $(document).ready(function() {
         }
         else {
             input.removeClass("valid").addClass("invalid");
-            input.next().text("A valid email looks like this janedoe@example.com");
+            input.next().text("Example: janedoe@example.com");
         }
     });
 
@@ -140,7 +140,7 @@ $(document).ready(function() {
         if (!correct) {
             //prevents event that submits form from realizing
             event.preventDefault();
-            $("#contact_submit button").next().text("Check your inputs");
+            $("#contact_submit button").next().text("");
             //console.log(correct);
             return false;
         }

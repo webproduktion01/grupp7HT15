@@ -1,0 +1,451 @@
+body {
+    margin: 0 5% 0 5%;
+    background-color: #FFFFFF;
+}
+
+main,
+header,
+nav,
+footer,
+#content,
+#mainPos,
+#teacherContainer,
+#vehicleContainer {
+    min-width: 100%;
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    float: left;
+}
+
+main {
+    width: 75em;
+    
+}
+
+header {
+    max-height: 20%;
+    min-height: 20%;
+    height: 20%;
+}
+
+nav {
+    max-height: 10%;
+    height: 10%;
+    min-height: 10%;
+}
+
+p {
+    font-family: "calibri", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, h7 {
+    font-family: "calibri", sans-serif;
+}
+
+
+/* Footer layout*/
+
+footer {
+    max-height: 10%;
+    height: 10%;
+    min-height: 10%;
+    max-width: 100%;
+    width: 100%;
+    min-width: 100%;
+}
+
+#contact-details{
+    max-height: 15%;
+    height: 15%;
+    min-height: 15%;
+}
+
+.adress-details {
+    float:left;
+    margin:0.5em;
+}
+
+.email-details {
+    float:left;
+    margin:0.5em;
+}
+
+.tel-details {
+    float:left;
+    margin:0.5em;
+}
+
+h6 {
+    font-size:1em;
+    font-weight:bold;
+    font-style:italic;
+}
+
+.adress-details p, email-details p, tel-details p {
+    font-size:1em;
+    font-style:italic;
+}
+
+
+/* Section 1 layout */
+
+#firstSection {
+    
+    
+}
+
+#firstSection h1 {
+    font-family: "calibri";
+    font-size:1.7em;
+    font-weight:bold;
+    margin:0.6em 0;
+}
+/*
+    Viewing window for items in slidshow
+    Width is how many items can fit in the slideshow.
+    Negative margin is how many is visible(at this moment 2(100% = 2 * 50%)
+    Depending on parent view container ofc
+*/
+#mainPos{
+    max-width:100%;
+    min-width:100%;
+    width:100%;
+    overflow:hidden;
+}
+
+
+
+#firstSection p {
+    font-family: "calibri";
+    font-size:1em;
+    line-height:1.2em;
+    margin:0.3em 0.3em;
+}
+
+
+/* Presentation site*/
+
+
+#teacherContainer,
+#vehicleContainer {
+    clear: left;
+    margin-left:-50%;        
+    max-width:200%;
+    width:200%;
+    min-width:200%;
+}
+
+
+#vehicleContainer .vehicle:nth-child(3),#vehicleContainer .vehicle:nth-child(4){
+    display:block;
+    float:left;
+}
+#teacherContainer {
+    font-family: "calibri" sans-serif;
+    font-size:1em;
+    line-height:1.2em;
+    margin: 0.125em 0 0.125em 0;
+}
+
+#vehicleContainer {
+    margin: 0.125em 0 0.125em 0;
+    font-family: "calibri" sans-serif;
+    font-size:1em;
+    line-height:1.2em;
+    margin-left:-50%;
+}
+
+.teacher h5 {
+    font-weight:bold;
+    margin-bottom:0.9em;
+    
+}
+#vehicleContainer .vehicle:nth-child(1n+4){
+}
+
+.vehicle h5 {
+    font-weight:bold;
+    margin-bottom:0.9em;
+    
+}
+/*
+    width setting for 4 items in container with 2 visible;
+*/
+.teacher,
+.vehicle {
+    float: left;
+    min-width:25%;
+    width:25%;
+    max-width: 25%;
+    overflow:hidden;
+}
+
+.teacher img,
+.vehicle img{
+    max-width:100%;
+
+}
+
+/* First section courses site*/
+
+#carContainer {
+    display:block;
+    width:100%;
+    height:25%;
+    margin-bottom:0.8em;
+    
+
+}
+
+
+#mcContainer {
+    display:block;
+    width:100%;
+    height:25%;
+    margin-bottom:1em;
+    
+    
+    
+}
+
+#mcContainer h3, #carContainer h3 {
+    font-size:1.3em;
+    font-weight:bold;
+    margin-bottom:0.5em;
+    padding:0.2em;
+    
+}
+
+.courseAndPrice {
+    height:15%;
+    width:100%;
+}
+
+.course {
+    display:block;
+    height:15%;
+    width:80%;
+    font-family: "calibri" sans-serif;
+    font-size:1em;
+    line-height:1.2em;
+  
+    padding:0.4em 0.4em 0.4em 0;
+}
+
+.course h5 {
+    font-weight:bold;
+    margin-bottom:0.3em;
+}
+
+#price {
+    font-family:"calibri";
+    width:20%;
+    padding:0.8em 0;
+    float:right;
+    display:inline;
+    margin-top:0.5em;
+    text-align:center;
+    
+    
+}
+
+/* Layout meny */
+
+nav {
+    text-align: center;
+    margin: auto;
+}
+
+nav section {
+}
+
+nav section h4 {
+    display:none;
+    font-size: 1.3em;
+    margin: 0 0em;
+    font-weight: bold;
+    padding:0.5em;
+}
+
+
+nav section div {
+    display:inline-block;
+}
+
+nav div div {
+    margin: 0 0em;
+    list-style: none;
+    display:inline-block;
+    
+}
+
+nav div div a {
+    display:block;
+    padding:1.2em 4em;
+    color: white;
+    font-family:sans-serif;
+    font-weight:bold;
+}
+
+nav div div a:link,
+nav div div a:visited {
+    text-decoration:none;
+}
+
+nav section:hover > div,
+nav section:hover > div div{
+    display: inline-block;
+}
+
+
+nav div div a:hover {
+    background:#FFFAF0;
+}
+
+/* Contact form layout/behaviour */
+
+#contact_form {
+    width:100%;
+    
+}
+
+#contact_form label{
+	display: inline-block;
+	width: 100px; 
+	text-align: left;
+	font-family:sans-serif;
+	
+}
+
+#submit_button {
+    padding:0.3em 1em;
+    font-family: "calibri";
+    font-size:1em;
+}
+
+#contact_submit{
+    
+	
+}
+#contact div{
+	margin-top: 1em;
+}
+textarea{
+	vertical-align: top;
+	height: 5em;
+}
+
+
+
+.error{
+    display:block;
+	margin-left: 10px;
+}		
+
+.error_show{
+	margin-left: 10px;
+}
+
+form div {
+    
+    font-size:1.1em;
+    margin:0em 1em 1.5em 1em;
+}
+
+form p {
+    font-size:0.8em;
+    font-style:italic;
+    height:0.8em;
+    min-height:0.8em;
+    margin-top:0.3em;
+    
+}
+
+
+
+
+
+contact_submit p {
+    font-size:0.8em;
+    font-style:italic;
+    
+    margin-top:0.3em;
+    
+}
+
+/* Contact block index site */
+
+#contact {
+    display:block;
+    float:left;
+    height:20%;
+    width:100%;
+}
+
+#contact h3 {
+    font-size:1.1em;
+    margin:0.5em;
+    font-weight:bold;
+}
+
+.contact-email {
+    margin:0.5em 0.5em 0.5em 0.7em;
+    font-size:0.8em;
+    font-style:italic;
+    line-height:1.1em;
+    float:left;
+}
+
+.contact-tel {
+    margin:0.5em 0.5em 0.5em 4em;
+    font-size:0.8em;
+    font-style:italic;
+    line-height:1.1em;
+    float:left;
+}
+
+
+/* Sprite icon settings */
+
+#logo {
+    width:100%;
+}
+#starticon,#scheduleicon,#presentationicon,#coursesicon,#contacticon,.activeicon{
+    background-image:url(pics/spritesTS3.svg);
+    background-repeat:no-repeat;
+    
+}
+#starticon{
+    background-position: 4px -190px;
+}
+
+#scheduleicon {
+    background-position: 4px -259px;
+}
+
+#presentationicon{
+    background-position: 4px -59px;
+}
+
+#coursesicon {
+    background-position: 4px -125px;
+}
+
+#contacticon {
+    background-position: 4px -330px;
+}
+
+.activeicon {
+    background-position: 4px -1px;
+}
+
+.menudiv {
+    
+}
+/*experimental sizing of calendar*/
+#calendar{
+    height:auto;
+    width:auto;
+    overflow:visible;
+}
