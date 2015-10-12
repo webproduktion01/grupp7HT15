@@ -20,7 +20,7 @@ footer,
 
 main {
     width: 75em;
-    overflow-y:scroll;
+    
 }
 
 header {
@@ -35,6 +35,13 @@ nav {
     min-height: 10%;
 }
 
+p {
+    font-family: "calibri", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, h7 {
+    font-family: "calibri", sans-serif;
+}
 
 
 /* Footer layout*/
@@ -85,9 +92,20 @@ h6 {
 
 #firstSection {
     
+    
+}
+
+#firstSection h1 {
+    font-family: "calibri";
+    font-size:1.7em;
+    font-weight:bold;
+    margin:0.6em 0;
 }
 /*
     Viewing window for items in slidshow
+    Width is how many items can fit in the slideshow.
+    Negative margin is how many is visible(at this moment 2(100% = 2 * 50%)
+    Depending on parent view container ofc
 */
 #mainPos{
     max-width:100%;
@@ -96,11 +114,19 @@ h6 {
     overflow:hidden;
 }
 
-/*
-    Width is how many items can fit in the slideshow.
-    Negative margin is how many is visible(in this moment 2(100% = 2 * 50%)
-    Depending on parent view container
-*/
+
+
+#firstSection p {
+    font-family: "calibri";
+    font-size:1em;
+    line-height:1.2em;
+    margin:0.3em 0.3em;
+}
+
+
+/* Presentation site*/
+
+
 #teacherContainer,
 #vehicleContainer {
     clear: left;
@@ -115,8 +141,32 @@ h6 {
     display:block;
     float:left;
 }
-#vehicleContainer .vehicle:nth-child(1n+4){
+#teacherContainer {
+    font-family: "calibri" sans-serif;
+    font-size:1em;
+    line-height:1.2em;
+    margin: 0.125em 0 0.125em 0;
+}
 
+#vehicleContainer {
+    margin: 0.125em 0 0.125em 0;
+    font-family: "calibri" sans-serif;
+    font-size:1em;
+    line-height:1.2em;
+}
+
+.teacher h5 {
+    font-weight:bold;
+    margin-bottom:0.9em;
+    
+}
+#vehicleContainer .vehicle:nth-child(1n+4){
+}
+
+.vehicle h5 {
+    font-weight:bold;
+    margin-bottom:0.9em;
+    
 }
 /*
     width setting for 4 items in container with 2 visible;
@@ -133,8 +183,71 @@ h6 {
 .teacher img,
 .vehicle img{
     max-width:100%;
+
 }
 
+/* First section courses site*/
+
+#carContainer {
+    display:block;
+    width:100%;
+    height:25%;
+    margin-bottom:0.8em;
+    
+
+}
+
+
+#mcContainer {
+    display:block;
+    width:100%;
+    height:25%;
+    margin-bottom:1em;
+    
+    
+    
+}
+
+#mcContainer h3, #carContainer h3 {
+    font-size:1.3em;
+    font-weight:bold;
+    margin-bottom:0.5em;
+    padding:0.2em;
+    
+}
+
+.courseAndPrice {
+    height:15%;
+    width:100%;
+}
+
+.course {
+    display:block;
+    height:15%;
+    width:80%;
+    font-family: "calibri" sans-serif;
+    font-size:1em;
+    line-height:1.2em;
+  
+    padding:0.4em 0.4em 0.4em 0;
+}
+
+.course h5 {
+    font-weight:bold;
+    margin-bottom:0.3em;
+}
+
+#price {
+    font-family:"calibri";
+    width:20%;
+    padding:0.8em 0;
+    float:right;
+    display:inline;
+    margin-top:0.5em;
+    text-align:center;
+    
+    
+}
 
 /* Layout meny */
 
@@ -147,10 +260,10 @@ nav section {
 }
 
 nav section h4 {
-    font-size: 1.17em;
-    margin: 0 1em;
+    font-size: 1.3em;
+    margin: 0 0em;
     font-weight: bold;
-    
+    padding:0.5em;
 }
 
 
@@ -159,13 +272,18 @@ nav section div {
 }
 
 nav div div {
-    margin: 0 0.5em;
+    margin: 0 0em;
     list-style: none;
     display:block;
+    
 }
 
 nav div div a {
-    color: black;
+    display:block;
+    
+    color: white;
+    font-family:sans-serif;
+    font-weight:bold;
 }
 
 nav div div a:link,
@@ -175,28 +293,38 @@ nav div div a:visited {
 
 nav section:hover > div,
 nav section:hover > div div{
-    display:block;
+    display: block;
 }
 
 
 nav div div a:hover {
-    background-color:navy;
+    background:#FFFAF0;
 }
 
 /* Contact form layout/behaviour */
 
 #contact_form {
     width:100%;
+    
 }
 
-#contact label{
+#contact_form label{
 	display: inline-block;
 	width: 100px; 
-	text-align: right;
+	text-align: left;
+	font-family:sans-serif;
 	
 }
+
+#submit_button {
+    padding:0.3em 1em;
+    font-family: "calibri";
+    font-size:1em;
+}
+
 #contact_submit{
-	padding-left: 10px;
+    
+	
 }
 #contact div{
 	margin-top: 1em;
@@ -205,11 +333,9 @@ textarea{
 	vertical-align: top;
 	height: 5em;
 }
-form span{
-    
-    float:left;
-    
-}
+
+
+
 .error{
     display:block;
 	margin-left: 10px;
@@ -220,34 +346,60 @@ form span{
 }
 
 form div {
-    display:block;
+    
     font-size:1.1em;
-    margin:1em;
+    margin:0em 1em 1.5em 1em;
 }
 
 form p {
     font-size:0.8em;
     font-style:italic;
+    height:0.8em;
+    min-height:0.8em;
+    margin-top:0.3em;
     
 }
 
+
+
+
+
+contact_submit p {
+    font-size:0.8em;
+    font-style:italic;
+    
+    margin-top:0.3em;
+    
+}
+
+/* Contact block index site */
+
 #contact {
-    max-height: 15%;
-    height: 15%;
-    min-height: 15%;
+    display:block;
+    float:left;
+    height:20%;
+    width:100%;
+}
+
+#contact h3 {
+    font-size:1.1em;
+    margin:0.5em;
+    font-weight:bold;
 }
 
 .contact-email {
-    margin:0.5em;
-    font-size:1.1em;
+    margin:0.5em 0.5em 0.5em 0.7em;
+    font-size:0.8em;
     font-style:italic;
+    line-height:1.1em;
     float:left;
 }
 
 .contact-tel {
-    margin:0.5em;
-    font-size:1.1em;
+    margin:0.5em 0.5em 0.5em 4em;
+    font-size:0.8em;
     font-style:italic;
+    line-height:1.1em;
     float:left;
 }
 
@@ -257,52 +409,37 @@ form p {
 #logo {
     width:100%;
 }
-
-#starticon{
+#starticon,#scheduleicon,#presentationicon,#coursesicon,#contacticon,.activeicon{
     background-image:url(pics/spritesTS3.svg);
     background-repeat:no-repeat;
-    background-position: -4px -190px;
+    
+}
+#starticon{
+    background-position: 4px -190px;
 }
 
 #scheduleicon {
-    background-image:url(pics/spritesTS3.svg);
-    background-repeat:no-repeat;
-    background-position: -4px -259px;
+    background-position: 4px -259px;
 }
 
 #presentationicon{
-    background-image:url(pics/spritesTS3.svg);
-    background-repeat:no-repeat;
-    background-position: -4px -59px;
-    
-    
+    background-position: 4px -59px;
 }
 
 #coursesicon {
-    background-image:url(pics/spritesTS3.svg);
-    background-repeat:no-repeat;
-    background-position: -4px -125px;
-    
+    background-position: 4px -125px;
 }
 
 #contacticon {
-    background-image:url(pics/spritesTS3.svg);
-    background-repeat:no-repeat;
-    background-position: -4px -330px;
-    
+    background-position: 4px -330px;
 }
 
 .activeicon {
-    background-image:url(pics/spritesTS3.svg);
-    background-repeat:no-repeat;
-    background-position:-4px -1px;
+    background-position: 4px -1px;
 }
-
-
 
 .menudiv {
     padding:1.3em;
-    
 }
 /*experimental sizing of calendar*/
 #calendar{

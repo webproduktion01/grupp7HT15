@@ -10,13 +10,24 @@ header{
    background-color:#EEEDDD;
 }
 nav{
-    background-color:#96B0FF;
+    background-color:#90d6f7;          /* rgba(0, 52, 113, 0.8); #10a5ed */
 }
+
+nav section h4 {
+    color:black;    
+}
+
+nav div div a {
+    color:black;
+    
+}
+
+
 #contact{
-   background-color:#FFE5E3;
+   background-color: #B6EEFF;
 }
 #content{
-    background-color:#000000;
+    background-color: white;
     
 }
 footer{
@@ -24,34 +35,63 @@ footer{
 }
 
 #adress {
-    background-color:#CCCCCC;
+    background-color:#10a5ed;
     
 }
+
+/* First section*/
+
 #firstSection{
-    background-color:#BBBBBB;
+    background-color: white;
     
 }
 #mainPos{
     background-color: white;
 }
 
+/* Presentation site */
+
 #teacherContainer{
-    background-color:#AAA999;
+    background-color:white;
     
 }
 #vehicleContainer{
-    background-color:#AAA888;
+    background-color:white;
     
 }
 .teacher{
-    background-color:#555555;
+    background-color:#b8e7ea;
 }
 .vehicle{
-    background-color:#444444;
+    background-color:#b8e7ea;
 }
+
+/* Courses site */
+
+#carContainer {
+    background-color:white;
+}
+
+#mcContainer {
+   background-color:white;
+}
+
+#mcContainer h3, #carContainer h3 {
+    background-color:#90d6f7;
+}
+
+.course {
+    background-color:white;
+}
+
+#price {
+    background-color:#b8e7ea;
+}
+
+
 /* below is the apparent solution...*/
 nav section h4:hover{
-    color:orange;
+    color:#26522;
 }
 
 /* Form input coloring */
@@ -69,6 +109,9 @@ nav section h4:hover{
 	border:1px solid #00ff00;
 }
 
+#submit_button {
+    background-color:#10a5ed;
+}
 
 
 

@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $("#contact_name").blur('input', function() {
-         var input = $(this);
+        var input = $(this);
         var is_name = input.val();
         if (is_name) {
             input.removeClass("invalid").addClass("valid");
@@ -96,28 +96,28 @@ $(document).ready(function() {
 
     // Message can't be blank
     $("#contact_message").blur('input', function() {
-         var input = $(this);
-        var message = $(this).val();
+        var input = $(this);
+        var message = input.val();
         if (message) {
             input.removeClass("invalid").addClass("valid");
             input.next().text("");
         }
         else {
             input.removeClass("valid").addClass("invalid");
-            input.next('SPAN').text("This field is required");
+            input.next().text("This field is required");
         }
     });
 
     $('#contact_message').keyup(function() {
         var input = $(this);
-        var message = $(this).val();
+        var message = input.val();
         if (message) {
             input.removeClass("invalid").addClass("valid");
             input.next().text("");
         }
         else {
             input.removeClass("valid").addClass("invalid");
-            input.next('SPAN').text("This field is required");
+            input.next().text("This field is required");
         }
     });
     //Function listener
@@ -134,7 +134,7 @@ $(document).ready(function() {
             else if (input.val()==="" || input.hasClass("invalid")) {
                 console.log(this.id+":"+this+"="+input.val());
                 correct = false; //sätter correct till false om ett fel hittas(ett enda)
-                input.next('span').text("Check this input");
+                input.next().text("Check this input");
             }
         });
         if (!correct) {
