@@ -61,6 +61,13 @@ footer {
     min-height: 15%;
 }
 
+#contact-details h6 {
+    margin:0.2em 0.5em;
+    font-size:1.2em;
+    font-style:italic;
+    font-weight:bold;
+}
+
 .adress-details {
     float:left;
     margin:0.5em;
@@ -76,16 +83,22 @@ footer {
     margin:0.5em;
 }
 
-h6 {
-    font-size:1em;
+
+
+.adress-details h8, .email-details h8, .tel-details h8   {
+    font-family:"calibri";
+    font-size:0.9em;
     font-weight:bold;
     font-style:italic;
 }
 
-.adress-details p, email-details p, tel-details p {
-    font-size:1em;
+
+.adress-details p, .email-details p, .tel-details p {
+    font-family:"calibri";
+    font-size:0.8em;
     font-style:italic;
 }
+
 
 
 /* Section 1 layout */
@@ -383,7 +396,7 @@ contact_submit p {
     margin-top: 0;
 }
 
-#contact h3 {
+#contact h4 {
     font-size:1.1em;
     margin:0.2em 0.5em;
     font-weight:bold;
@@ -415,7 +428,7 @@ contact_submit p {
     margin-top: 0;
 }
 
-#time h3 {
+#time h4 {
     font-size:1.1em;
     margin:0.2em 0.5em;
     font-weight:bold; 
