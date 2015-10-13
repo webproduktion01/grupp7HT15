@@ -53,7 +53,7 @@ footer{
 /* First section*/
 
 #firstSection{
-    background-color: white;
+    background-color: white
     
 }
 #mainPos{
@@ -102,7 +102,11 @@ footer{
 
 /* below is the apparent solution...*/
 nav section h4:hover{
-    color:#26522;
+    color:#42A9DB;
+}
+nav section:hover > h4{
+    color:#42A9DB;
+    background-color:#C1E9FD;
 }
 
 /* Form input coloring */

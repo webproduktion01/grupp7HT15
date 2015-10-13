@@ -37,7 +37,7 @@ function slideShow(tClass, animationSpeed, viewableItems) {
         "width": adaptedItemWidth + "%",
         "display":"block",
     	"float":"left",
-    	"background-color":"yellow",
+    	//"background-color":"yellow",
     	"margin":0
     });
     //Setting container width
@@ -47,8 +47,8 @@ function slideShow(tClass, animationSpeed, viewableItems) {
         "width": containerWidth + "%",
     	"margin":0,
         "margin-left":"-"+itemWidth + "%",
-    	"display":"block",
-        "background-color":"green"
+    	"display":"block"
+        //"background-color":"green"
     });
     $(tClass).parent().parent().css({
        "min-width": "100%",
