@@ -3,29 +3,39 @@ body{
 }
 
 main{
-    background-color:#EEEEEE;
+    background-color:white;
     
 }
 header{
    background-color:#EEEDDD;
 }
 nav{
-    background-color:#90d6f7;          /* rgba(0, 52, 113, 0.8); #10a5ed */
+    background-color:#42A9DB;          /* rgba(0, 52, 113, 0.8); #10a5ed */
 }
 
 nav section h4 {
-    color:black;    
+    color:white;    
 }
 
 nav div div a {
-    color:black;
+    color:white;
     
 }
-
-
-#contact{
-   background-color: #B6EEFF;
+nav div div a:hover {
+    background-color:#90d6f7;
 }
+
+/* Contact block */
+#contact{
+   background-color: #67C2EE;
+}
+
+/* Opening hours block */
+
+#time {
+    background-color:#C1E9FD;
+}
+
 #content{
     background-color: white;
     

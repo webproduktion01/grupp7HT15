@@ -297,9 +297,12 @@ nav section:hover > div div{
 }
 
 
-nav div div a:hover {
-    background:#FFFAF0;
-}
+
+nav div div a:link { color:white;}
+nav div div a:visited { color:white;}
+nav div div a:focus {color:white;}
+nav div div a:hover {background:#90d6f7;}
+nav div div a:active {color:white;}
 
 /* Contact form layout/behaviour */
 
@@ -326,9 +329,7 @@ nav div div a:hover {
     
 	
 }
-#contact div{
-	margin-top: 1em;
-}
+
 textarea{
 	vertical-align: top;
 	height: 5em;
@@ -379,16 +380,17 @@ contact_submit p {
     float:left;
     height:20%;
     width:100%;
+    margin-top: 0;
 }
 
 #contact h3 {
     font-size:1.1em;
-    margin:0.5em;
+    margin:0.2em 0.5em;
     font-weight:bold;
 }
 
 .contact-email {
-    margin:0.5em 0.5em 0.5em 0.7em;
+    margin:0 0.5em 0.5em 0.7em;
     font-size:0.8em;
     font-style:italic;
     line-height:1.1em;
@@ -396,13 +398,36 @@ contact_submit p {
 }
 
 .contact-tel {
-    margin:0.5em 0.5em 0.5em 4em;
+    margin:0 0.5em 0.5em 4em;
     font-size:0.8em;
     font-style:italic;
     line-height:1.1em;
     float:left;
 }
 
+/* Opening hours block */
+
+#time {
+    display:block;
+    float:left;
+    height:20%;
+    width:100%;
+    margin-top: 0;
+}
+
+#time h3 {
+    font-size:1.1em;
+    margin:0.2em 0.5em;
+    font-weight:bold; 
+}
+
+#time p {
+    margin:0 0.5em 0.5em 0.7em;
+    font-size:0.8em;
+    font-style:italic;
+    line-height:1.1em;
+    
+}
 
 /* Sprite icon settings */
 
