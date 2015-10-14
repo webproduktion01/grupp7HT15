@@ -1,4 +1,7 @@
 $(document).ready(function() {
+    /*
+        
+    */
     $("#contact_name").blur('input', function() {
         var input = $(this);
         var is_name = input.val();

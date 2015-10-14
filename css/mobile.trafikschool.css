@@ -119,7 +119,7 @@ footer {
 }
 
 .tel-details {
-<<<<<<< Updated upstream
+
     float:left;
     margin:0.5em;
 }
@@ -155,10 +155,7 @@ footer {
     font-weight:bold;
     margin:0.6em 0;
 }
-=======
-    float: left;
-    margin: 0.5em;
-}
+
 
 .adress-details p,
 email-details p,
@@ -168,7 +165,6 @@ tel-details p {
 }
 
 
->>>>>>> Stashed changes
 /*
     Viewing window for items in slidshow
     Width is how many items can fit in the slideshow.
@@ -398,7 +394,6 @@ contact_submit p {
 /* Contact block index site */
 
 #contact {
-<<<<<<< Updated upstream
     display:block;
     float:left;
     height:20%;
@@ -410,12 +405,10 @@ contact_submit p {
     font-size:1.1em;
     margin:0.2em 0.5em;
     font-weight:bold;
-=======
     display: block;
     float: left;
     height: 20%;
     width: 100%;
->>>>>>> Stashed changes
 }
 
 .contact-email {
@@ -427,7 +420,6 @@ contact_submit p {
 }
 
 .contact-tel {
-<<<<<<< Updated upstream
     margin:0 0.5em 0.5em 4em;
     font-size:0.8em;
     font-style:italic;
@@ -446,16 +438,10 @@ contact_submit p {
 }
 
 #time h4 {
-    font-size:1.1em;
-    margin:0.2em 0.5em;
-    font-weight:bold; 
-=======
-    margin: 0.5em 0.5em 0.5em 4em;
-    font-size: 0.8em;
-    font-style: italic;
+    margin: 0.5em 0.5em 0.5em 0.5em;
+    font-size: 1.1em;
     line-height: 1.1em;
-    float: left;
->>>>>>> Stashed changes
+    
 }
 
 
