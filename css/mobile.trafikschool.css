@@ -551,6 +551,10 @@ contact_submit p {
 
 /*experimental sizing of calendar*/
 
+.ui-widget-header {
+    background-color:#C1E9FD !important;
+}
+
 #calendar {
     height: auto;
     width: auto;

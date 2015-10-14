@@ -63,7 +63,7 @@ var quickSetCalender = function(daysToShow) {
         }]
     };
     var calendar = $('#calendar').weekCalendar({
-        daysToShow: daysToShow,
+        daysToShow: widthSettings(),
         timeslotsPerHour: 4,
         timeslotHeigh: 30,
         //add 'a' to string to add am/pm
