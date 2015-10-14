@@ -7,7 +7,7 @@
     <!-- #TODO Below-->
     <link rel="shortcut icon" href="" type="image/png" id="favicon" />
     <link rel="stylesheet" type="text/css" href="../css/reset.css" />
-    <link rel="stylesheet" type="text/css" href="../css/mobile.trafikschool.css" media="screen and (max-width:640px)"/>
+    <link rel="stylesheet" type="text/css" href="../css/mobile.trafikschool.css" media="screen and (max-width:640px)" />
     <link rel="stylesheet" type="text/css" href="../css/color.trafikschool.css" />
     <link rel="stylesheet" type="text/css" href="../css/trafikschool.css" media="screen and (min-width:640px)" />
 
@@ -18,7 +18,7 @@
 <body>
     <main>
         <header>
-             <img src="../css/pics/HeaderTS.jpg" id="logo" alt="A header with a picture of a road with the company name on it" />
+            <img src="../css/pics/HeaderTSN.jpg" id="logo" alt="A header with a picture of a road with the company name on it" />
         </header>
         <nav>
             <section>
@@ -38,7 +38,7 @@
                 <!-- section here -->
                 <h1>Kontakta oss</h1>
                 <div id="mainPos">
-                    <form id="contact_form" method="post" action="#" >
+                    <form id="contact_form" method="post" action="#">
                         <!-- Name -->
                         <div>
                             <label for="contact_name">Namn:</label>
@@ -69,13 +69,13 @@
                             <p></p>
                         </div>
                     </form>
-                    <div id="popupMessage"></div>
                 </div>
-            </section>
+        </div>
+        </section>
         </div>
         <footer>
             <div id="contact-details">
-                <h6>Harnöviks trafikskola</h6>
+                <h5>Harnöviks trafikskola</h5>
                 <div class="adress-details">
                     <h6>Adress</h6>
                     <p>Stubbgatan 26, 677 88 Harnövik</p>
@@ -91,10 +91,35 @@
             </div>
         </footer>
     </main>
+    <div id="popupMessage">
+        <div>
+            <h4>Vänligen bekräfta din information</h4>
+        </div>
+        <div>
+            <h6>Namn:</h6>
+            <p id="nameValue"></p>
+        </div>
+        <div>
+            <h6>Email:</h6>
+            <p id="emailValue"></p>
+        </div>
+        <div>
+            <h6>Telefon:</h6>
+            <p id="telValue"></p>
+        </div>
+        <div>
+            <h6>Meddelande:</h6>
+            <p id="messageValue"></p>
+        </div>
+        <div>
+            <button id="cancel">Avbryt</button>
+            <button id="confirm">Skicka</button>
+        </div>
+    </div>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js"></script>
     <script type="text/javascript" src="../js/form.js"></script>
 </body>
-</body>
+
 
 </html>
