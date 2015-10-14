@@ -1,51 +1,85 @@
-var year = new Date().getFullYear();
-var month = new Date().getMonth();
-var day = new Date().getDate();
-
-var eventData = {
-    events: [{
-        'id': 1,
-        'start': new Date(year, month, day, 12),
-        'end': new Date(year, month, day, 13, 35),
-        'title': 'Lunch with Mike'
-    }, {
-        'id': 2,
-        'start': new Date(year, month, day, 14),
-        'end': new Date(year, month, day, 14, 45),
-        'title': 'Dev Meeting'
-    }, {
-        'id': 3,
-        'start': new Date(year, month, day + 1, 18),
-        'end': new Date(year, month, day + 1, 18, 45),
-        'title': 'Hair cut'
-    }, {
-        'id': 4,
-        'start': new Date(year, month, day - 1, 8),
-        'end': new Date(year, month, day - 1, 9, 30),
-        'title': 'Team breakfast'
-    }, {
-        'id': 5,
-        'start': new Date(year, month, day + 1, 14),
-        'end': new Date(year, month, day + 1, 15),
-        'title': 'Product showcase'
-    }]
-};
+/*
+    Documentation:
+    https://github.com/robmonie/jquery-week-calendar/wiki
+    Latest build at this date(2015/10/14:
+    https://github.com/calvera/jquery-week-calendar/blob/master/jquery.weekcalendar.js
+*/
 
 $(document).ready(function() {
-    $('#calendar').weekCalendar({
-        //Mobile version should view only 3 days
-        daysToShow:3,
+
+
+    var screenWidth = $(window).width();
+    var calendar = quickSetCalender();
+    var daysToShow = 
+
+
+    //Status message window, useful for debugging/Information
+    //$('<div id="message" class="ui-corner-all"></div>').prependTo($('body'));
+
+    //Size change listener, changes days depending on resolution
+    $(window).resize(function(event) {
+        var newWidth = $(window).width();
+
+        //Reduces load on client when resizing, can't instantiate nonstop
+        if (newWidth > 640 && screenWidth <640) {
+            calendar = quickSetCalender(7);
+            screenWidth=newWidth;
+        }
+        else if (newWidth < 640 && screenWidth >640){
+            calendar = quickSetCalender(3);
+            screenWidth=newWidth;
+        }
+    });
+
+});
+
+var widthSettings = function(){
+    var screenWidth = $(window).width();
+    if (screenWidth > 640) {
+            return 7;
+        }
+        else {
+            return 3;
+        }
+};
+
+var quickSetCalender = function(daysToShow) {
+
+    var year = new Date().getFullYear();
+    var month = new Date().getMonth();
+    var day = new Date().getDate();
+
+    var eventData = {
+        events: [{
+            'id': 1,
+            'start': new Date(year, month, 16, 9, 45),
+            'end': new Date(year, month, 16, 10),
+            'title': 'Presentation'
+        }, {
+            'id': 2,
+            'start': new Date(year, month, 16, 19),
+            'end': new Date(year, month, 16, 22),
+            'title': 'Trolig utgång'
+        }]
+    };
+    var calendar = $('#calendar').weekCalendar({
+        daysToShow: daysToShow,
         timeslotsPerHour: 4,
         timeslotHeigh: 30,
+        //add 'a' to string to add am/pm
+        timeFormat: "h:i",
         hourLine: true,
         data: eventData,
         //remove title
-        title:'Kalender',
-        textSize:13,
-        allowEventDelete:true,
+        title: 'Kalender',
+        textSize: 13,
+        timeSeparator: '-',
+        allowCalEventOverlap: true,
+        allowEventDelete: true,
         height: function($calendar) {
             return $(window).height() - $('h1').outerHeight(true);
         },
+        /* Needs a styling here*/
         eventRender: function(calEvent, $event) {
             if (calEvent.end.getTime() < new Date().getTime()) {
                 $event.css('backgroundColor', '#aaa');
@@ -56,8 +90,7 @@ $(document).ready(function() {
             }
         },
         eventNew: function(calEvent, $event) {
-            displayMessage('<strong>Added event</strong><br/>Start: ' + calEvent.start + '<br/>End: ' + calEvent.end);
-            alert('You\'ve added a new event. You would capture this event, add the logic for creating a new event with your own fields, data and whatever backend persistence you require.');
+            displayMessage('<strong>La till en händelse</strong><br/>Start: ' + calEvent.start + '<br/>End: ' + calEvent.end);
         },
         eventDrop: function(calEvent, $event) {
             displayMessage('<strong>Moved Event</strong><br/>Start: ' + calEvent.start + '<br/>End: ' + calEvent.end);
@@ -77,11 +110,10 @@ $(document).ready(function() {
         noEvents: function() {
             displayMessage('There are no events for this week');
         }
+
     });
 
     function displayMessage(message) {
         $('#message').html(message).fadeIn();
     }
-    //Status message window, useful for debugging
-    //$('<div id="message" class="ui-corner-all"></div>').prependTo($('body'));
-});
+};
