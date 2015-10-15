@@ -411,7 +411,7 @@ contact_submit p {
     display: none;
     position: fixed;
     width: 80%;
-    height: 60%;
+    height: 76%;
     left: 10%;
     top: 15%;
     border:1px solid #42AADB;
@@ -422,27 +422,29 @@ contact_submit p {
     min-width: 100%;
     width: 100%;
     max-width: 100%;
-    min-height: 16%;
+    min-height: 5%;
+    height:12%;
+    max-height:15%;
 }
 
 #popupMessage h4 {
-    margin: 2%;
+    margin: 3%;
 }
 
 #popupMessage h6 {
-    margin: 2%;
+    margin: 4%;
     padding: 2%;
-    max-width: 42%;
-    min-width:42%;
+    max-width: 38%;
+    min-width:35%;
     float: left;
     font-style: normal;
 }
 
 #popupMessage p {
-    margin: 2%;
+    margin: 4%;
     padding: 2%;
-    max-width: 42%;
-    min-width:42%;
+    max-width: 38%;
+    min-width:35%;
     float: left;
 }
 
@@ -469,7 +471,7 @@ contact_submit p {
 }
 
 .form_style {
-    border:2px solid #42AADB;
+    
 }
 
 
