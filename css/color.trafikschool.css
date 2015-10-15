@@ -34,10 +34,12 @@ nav div div a {
     
 }
 nav div div a:hover {
-    background-color:#90d6f7;
     color:#146b95;
+    background-color:transparent;
 }
-
+nav div div:hover{
+    background-color:#90d6f7;
+}
 /* Contact block */
 #contact{
    background-color: #67C2EE;
