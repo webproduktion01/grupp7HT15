@@ -157,7 +157,11 @@ footer {
     margin: 0.6em 0;
 }
 
-
+section h3{
+    font-size:1.3em;
+    margin:0;
+    padding:0.2em;
+}
 /*
     Viewing window for items in slidshow
     Width is how many items can fit in the slideshow.
@@ -182,6 +186,13 @@ footer {
 
 /* Presentation page specific settings*/
 
+#mainPos section {
+
+}
+#itemContainer{
+    
+    margin: 2% 2% 5% 0;
+}
 #teacherViewport,
 #vehicleViewport {
     margin-bottom: 0.3em;
@@ -278,7 +289,7 @@ footer {
     margin-bottom: 0.3em;
 }
 
-#price {
+.price {
     font-family: "calibri";
     width: 20%;
     padding: 0.8em 0;
@@ -287,6 +298,11 @@ footer {
     margin-top: 0.5em;
     text-align: center;
 }
+/* Needed to align text with courses. Top one only needed*/
+#carContainer div:nth-child(2){
+    margin-top:-0.4em;
+}
+
 
 
 /* Layout meny */
@@ -324,7 +340,7 @@ nav section:hover > div div {
 }
 
 nav div div a:hover {
-    background: #FFFAF0;
+    background-color: #FFFAF0;
 }
 
 
@@ -332,6 +348,7 @@ nav div div a:hover {
 
 #contact_form {
     width: 100%;
+    margin-top:2em;
 }
 
 #contact_form label {
@@ -392,7 +409,7 @@ contact_submit p {
 
 #popupMessage {
     display: none;
-    position: absolute;
+    position: fixed;
     width: 80%;
     height: 60%;
     left: 10%;
@@ -414,7 +431,8 @@ contact_submit p {
 #popupMessage h6 {
     margin: 2%;
     padding: 2%;
-    max-width: 50%;
+    max-width: 42%;
+    min-width:42%;
     float: left;
     font-style: normal;
 }
@@ -422,7 +440,8 @@ contact_submit p {
 #popupMessage p {
     margin: 2%;
     padding: 2%;
-    max-width: 50%;
+    max-width: 42%;
+    min-width:42%;
     float: left;
 }
 

@@ -152,8 +152,7 @@ footer {
     min-width:200%;
 }
 
-#teacherContainer h3,
-#vehicleContainer h3 {
+section h3 {
     font-size:1.3em;
     font-weight:bold;
     margin-bottom:0.5em;
@@ -161,10 +160,6 @@ footer {
 }
 
 
-#vehicleContainer .vehicle:nth-child(3),#vehicleContainer .vehicle:nth-child(4){
-    display:block;
-    float:left;
-}
 #teacherContainer {
     font-family: "calibri" sans-serif;
     font-size:1em;
@@ -213,22 +208,12 @@ footer {
 
 /* First section courses site*/
 
-#carContainer {
+
+
+#mcContainer,#carContainer {
     display:block;
     width:100%;
     height:25%;
-    margin:2% 2% 5% 2%;
-    
-}
-
-
-#mcContainer {
-    display:block;
-    width:100%;
-    height:25%;
-    margin:2% 2% 8% 2%;
-    
-  
 }
 
 #mcContainer h3, #carContainer h3 {
@@ -259,7 +244,7 @@ footer {
     margin-bottom:0.3em;
 }
 
-#price {
+.price {
     font-family:"calibri";
     width:20%;
     padding:0.8em 0;
@@ -329,6 +314,7 @@ nav section:hover > div div{
 
 #contact_form {
     width:100%;
+    margin-top:6%;
     
 }
 
@@ -392,19 +378,11 @@ contact_submit p {
 
 #popupMessage {
     display: none;
-    position: absolute;
-    width: 39%;
+    position: fixed;
+    width: 50%;
     height: 85%;
-    left: 10%;
+    left: 25%;
     top: 15%;
-}
-
-#popupMessage div {
-    float: left;
-    min-width: 100%;
-    width: 100%;
-    max-width: 100%;
-    min-height: 16%;
 }
 
 #popupMessage h4 {

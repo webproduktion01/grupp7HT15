@@ -1,3 +1,15 @@
+/*  As hex codes
+
+.color-primary-0 { color: #90D5F7 }	 Main Primary color 
+.color-primary-1 { color: #FFFFFF }
+.color-primary-2 { color: #C1E9FD }
+.color-primary-3 { color: #67C2EE }
+.color-primary-4 { color: #42AADB }
+
+*/
+
+
+
 body{
     background-color:#FFFFFF;
 }
@@ -79,7 +91,7 @@ section h3 {
     background-color:white;
 }
 .vehicle{
-    background-color:#C1E9FD;
+    background-color:white;
 }
 
 /* Courses site */
@@ -100,7 +112,7 @@ section h3 {
     background-color:white;
 }
 
-#price {
+.price {
     background-color:#90D5F7;
 }
 
@@ -135,6 +147,13 @@ nav section:hover > h4{
 
 #popupMessage {
     background-color:#C1E9FD;
+}
+#popupMessage div{
+    background-color:#90D5F7;
+    border-color:;
+}
+#popupMessage div p{
+
 }
 
 #cancel {

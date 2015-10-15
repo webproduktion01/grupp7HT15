@@ -1,0 +1,35 @@
+@media {
+
+body {
+    margin: 5%;
+    color: black;
+    background-color: white;
+}
+
+div {
+   page-break-after: avoid;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+#itemContainer p {
+    font-size:1.2em;
+}
+
+#infoblock {
+    margin:0;
+}
+
+nav {
+    display:none;
+}    
+
+header {
+    display:none;
+}
+    
+    
+    
+}
