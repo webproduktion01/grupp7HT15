@@ -274,7 +274,7 @@ nav {
     font-weight:bold;
     text-align:left;
     alignment-adjust:central;
-    margin-left:2em;
+    margin-left:1.65em;
 }
 
 
@@ -502,7 +502,7 @@ contact_submit p {
 	background-position: 0px -192px;
 }
 #scheduleicon {
-	background-position: -3px -259px;
+	background-position: 0px -259px;
 }
 
 #coursesicon {
@@ -512,7 +512,7 @@ contact_submit p {
 	background-position: 1px -330px;
 }
 #presentationicon {
-	background-position: -4px -59px;
+	background-position: 0px -59px;
 }
 #logo {
     width:100%;
