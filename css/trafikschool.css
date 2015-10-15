@@ -68,7 +68,7 @@ footer {
     min-height: 15%;
 }
 
-#contact-details h6 {
+#contact-details h5 {
     margin:0.2% 1%;
     font-size:1.2em;
     font-style:italic;
@@ -90,16 +90,16 @@ footer {
     margin:0.5% 1%;
 }
 
-.adress-details h8, .email-details h8, .tel-details h8   {
+.adress-details h6, .email-details h6, .tel-details h6   {
     font-family:"calibri";
-    font-size:0.9em;
+    font-size:1em;
     font-weight:bold;
     font-style:italic;
 }
 
 .adress-details p, .email-details p, .tel-details p {
     font-family:"calibri";
-    font-size:0.8em;
+    font-size:1em;
     font-style:italic;
 }
 
@@ -150,6 +150,14 @@ footer {
     max-width:200%;
     width:200%;
     min-width:200%;
+}
+
+#teacherContainer h3,
+#vehicleContainer h3 {
+    font-size:1.3em;
+    font-weight:bold;
+    margin-bottom:0.5em;
+    padding:0.2em;
 }
 
 
@@ -269,6 +277,10 @@ nav {
     text-align: center;
     margin: auto;
 }
+.menudiv{
+    padding: 1.2em 4em;
+}
+
 
 nav section {
 }
@@ -371,15 +383,65 @@ form p {
 }
 
 
-
-
-
 contact_submit p {
     font-size:0.8em;
     font-style:italic;
     margin-top:0.3em;
-    
 }
+
+
+#popupMessage {
+    display: none;
+    position: absolute;
+    width: 39%;
+    height: 85%;
+    left: 10%;
+    top: 15%;
+}
+
+#popupMessage div {
+    float: left;
+    min-width: 100%;
+    width: 100%;
+    max-width: 100%;
+    min-height: 16%;
+}
+
+#popupMessage h4 {
+    margin: 2%;
+}
+
+#popupMessage h6 {
+    margin: 2%;
+    padding: 2%;
+    max-width: 50%;
+    float: left;
+    font-style: normal;
+}
+
+#popupMessage p {
+    margin: 2%;
+    padding: 2%;
+    max-width: 50%;
+    float: left;
+}
+
+#cancel {
+    font-family: "calibri";
+    padding: 2%;
+    margin: 1% 1% 1% 3%;
+}
+
+#confirm {
+    font-family: "calibri";
+    padding: 2%;
+    margin: 1% 1% 1% 3%;
+}
+
+
+
+
+
 
 /* Wrapper for contact and time */
 
@@ -483,9 +545,6 @@ contact_submit p {
     background-position: 4px -1px;
 }
 
-.menudiv {
-    
-}
 /*experimental sizing of calendar*/
 #calendar{
     height:auto;

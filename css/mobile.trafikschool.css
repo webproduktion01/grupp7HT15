@@ -365,6 +365,9 @@ form div {
     font-size: 1.1em;
     margin: 0em 1em 1.5em 1em;
 }
+form div input{
+    border: 1px inset;
+}
 
 form p {
     font-size: 0.8em;
@@ -378,6 +381,8 @@ contact_submit p {
     font-size: 0.8em;
     font-style: italic;
     margin-top: 0.3em;
+    height:0.8em;
+    min-height:0.8em;
 }
 
 

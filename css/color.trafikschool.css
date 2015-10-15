@@ -70,8 +70,13 @@ footer{
     background-color:white;
     
 }
+
+section h3 {
+    background-color:#42A9DB;    
+}
+
 .teacher{
-    background-color:#C1E9FD;
+    background-color:white;
 }
 .vehicle{
     background-color:#C1E9FD;
