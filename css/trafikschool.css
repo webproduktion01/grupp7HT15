@@ -258,6 +258,7 @@ nav {
     margin: auto;
     width:inherit;
     height:3.5em;
+    height:auto;
 }
 .menudiv{
     margin: 0;
