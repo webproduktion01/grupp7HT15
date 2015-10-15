@@ -257,6 +257,7 @@ nav {
     text-align: center;
     margin: auto;
     width:inherit;
+    height:3.5em;
 }
 .menudiv{
     margin: 0;
@@ -271,6 +272,7 @@ nav {
     font-family:sans-serif;
     font-weight:bold;
     text-align:center;
+    alignment-adjust:central;
 }
 
 
@@ -496,7 +498,22 @@ contact_submit p {
 }
 
 /* Sprite icon settings */
+#starticon {
+	background-position: 0px -192px;
+}
+#scheduleicon {
+	background-position: -3px -259px;
+}
 
+#coursesicon {
+	background-position: 0px -124px;
+}
+#contacticon {
+	background-position: 1px -330px;
+}
+#presentationicon {
+	background-position: -4px -59px;
+}
 #logo {
     width:100%;
 }
@@ -504,7 +521,7 @@ contact_submit p {
 
 
 .activeicon {
-    background-position: 4px -1px;
+	background-position: -4px 1px;
 }
 
 /*experimental sizing of calendar*/
