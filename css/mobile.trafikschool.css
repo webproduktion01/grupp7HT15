@@ -414,17 +414,18 @@ contact_submit p {
     height: 76%;
     left: 10%;
     top: 15%;
-    border:1px solid #42AADB;
+    border:2px solid #42AADB;
 }
 
 #popupMessage div {
     float: left;
-    min-width: 100%;
-    width: 100%;
+    min-width: 90%;
+    width: 93%;
     max-width: 100%;
     min-height: 5%;
-    height:12%;
+    height:13%;
     max-height:15%;
+    margin:2.5%;
 }
 
 #popupMessage h4 {
@@ -471,6 +472,7 @@ contact_submit p {
 }
 
 .form_style {
+    border:2px solid #42A9DB;
     
 }
 

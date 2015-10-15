@@ -134,13 +134,13 @@ nav section:hover > h4{
 }
 .invalid{
 	outline-color:red;
-	border:1px solid red;
+	border:1px inset red;
 	
 }
 
 .valid{
 	outline-color: #00ff00;
-	border:1px solid #00ff00;
+	border:1px inset #00ff00;
 }
 
 #submit_button {
@@ -150,9 +150,9 @@ nav section:hover > h4{
 #popupMessage {
     background-color:#C1E9FD;
 }
-#popupMessage div{
+
+.form_style {
     background-color:#90D5F7;
-    
 }
 #popupMessage div p{
 

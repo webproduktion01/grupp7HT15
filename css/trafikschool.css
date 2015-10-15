@@ -161,7 +161,7 @@ section h3 {
 
 
 #teacherContainer {
-    font-family: "calibri" sans-serif;
+    font-family: "calibri", sans-serif;
     font-size:1em;
     line-height:1.2em;
     margin: 0.125em 0 0.125em 0;
@@ -169,7 +169,7 @@ section h3 {
 
 #vehicleContainer {
     margin: 0.125em 0 0.125em 0;
-    font-family: "calibri" sans-serif;
+    font-family: "calibri", sans-serif;
     font-size:1em;
     line-height:1.2em;
     margin-left:-50%;
@@ -228,7 +228,7 @@ section h3 {
     display:block;
     height:15%;
     width:75%;
-    font-family: "calibri" sans-serif;
+    font-family: "calibri", sans-serif;
     font-size:1em;
     line-height:1.2em;
     padding:0.4em 0.4em 0.4em 0;
@@ -272,7 +272,6 @@ nav {
     font-family:sans-serif;
     font-weight:bold;
     text-align:left;
-    alignment-adjust:central;
     margin-left:2em;
 }
 
@@ -389,7 +388,7 @@ contact_submit p {
     width: 50%;
     height: 85%;
     left: 25%;
-    top: 15%;
+    top: 5%;
 }
 
 #popupMessage h4 {
