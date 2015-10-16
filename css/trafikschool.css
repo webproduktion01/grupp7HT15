@@ -349,6 +349,9 @@ nav section:hover > div div{
 textarea{
 	vertical-align: top;
 	height: 5em;
+    width:50%;
+    /* Always needed for input fields even if its a textarea*/
+    border:1px inset;
 }
 
 
