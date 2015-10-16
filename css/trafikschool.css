@@ -390,11 +390,13 @@ contact_submit p {
 #popupMessage {
     display: none;
     position: fixed;
-    width: inherit;
-    height: 50%;
+    width: 30em;
     top: 25%;
-    left: 25%;
-    overflow:hidden;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    height:auto;
+    left:25%;
 }
 #popupMessage div{
     min-width: 90%;
