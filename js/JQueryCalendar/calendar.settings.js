@@ -52,7 +52,7 @@ var quickSetCalender = function(daysToShow) {
     var eventData = {
         events: [{
             'id': 1,
-            'start': new Date(year, month, 16, 9, 45),
+            'start': new Date(year, month, 16, 9),
             'end': new Date(year, month, 16, 10),
             'title': 'Presentation'
         }, {
