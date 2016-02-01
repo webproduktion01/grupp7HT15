@@ -22,12 +22,10 @@ $(document).ready(function() {
         //Reduces load on client when resizing
         if (newWidth > 640 && screenWidth <640) {
             calendar.weekCalendar("setDaysToShow",7);
-            //calendar.weekCalendar("refresh");
             screenWidth=newWidth;
         }
         else if (newWidth < 640 && screenWidth >640){
             calendar.weekCalendar("setDaysToShow",3);
-            //calendar.weekCalendar("refresh");
             screenWidth=newWidth;
         }
     });
