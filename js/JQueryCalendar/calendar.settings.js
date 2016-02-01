@@ -10,7 +10,6 @@ $(document).ready(function() {
 
     var screenWidth = $(window).width();
     var calendar = quickSetCalender();
-    var daysToShow = 
 
 
     //Status message window, useful for debugging/Information
@@ -20,13 +19,15 @@ $(document).ready(function() {
     $(window).resize(function(event) {
         var newWidth = $(window).width();
 
-        //Reduces load on client when resizing, can't instantiate nonstop
+        //Reduces load on client when resizing
         if (newWidth > 640 && screenWidth <640) {
-            calendar = quickSetCalender(7);
+            calendar.weekCalendar("setDaysToShow",7);
+            //calendar.weekCalendar("refresh");
             screenWidth=newWidth;
         }
         else if (newWidth < 640 && screenWidth >640){
-            calendar = quickSetCalender(3);
+            calendar.weekCalendar("setDaysToShow",3);
+            //calendar.weekCalendar("refresh");
             screenWidth=newWidth;
         }
     });
@@ -116,4 +117,5 @@ var quickSetCalender = function(daysToShow) {
     function displayMessage(message) {
         $('#message').html(message).fadeIn();
     }
+    return calendar;
 };
